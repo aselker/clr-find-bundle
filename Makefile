@@ -1,2 +1,8 @@
+INSTALL_PATH?=$(DESTDIR)/usr/bin
+
+build:
+	true
+
 install:
-	cp find-bundle.sh /usr/bin/find-bundle
+	mkdir -p $(INSTALL_PATH)
+	cp find-bundle.sh $(INSTALL_PATH)
